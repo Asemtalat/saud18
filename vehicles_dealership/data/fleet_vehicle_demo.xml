@@ -1,31 +1,50 @@
 <?xml version="1.0" encoding="utf-8"?>
 <odoo>
     <!-- =======================
+         Fleet Brands
+    ======================= -->
+    <record id="fleet_brand_opel" model="fleet.vehicle.model.brand">
+        <field name="name">Opel</field>
+    </record>
+
+    <record id="fleet_brand_audi" model="fleet.vehicle.model.brand">
+        <field name="name">Audi</field>
+    </record>
+
+    <record id="fleet_brand_bmw" model="fleet.vehicle.model.brand">
+        <field name="name">BMW</field>
+    </record>
+
+    <record id="fleet_brand_mercedes" model="fleet.vehicle.model.brand">
+        <field name="name">Mercedes</field>
+    </record>
+
+    <!-- =======================
          Vehicle Models
     ======================= -->
     <record id="fleet_model_opel_astra" model="fleet.vehicle.model">
         <field name="name">Astra</field>
-        <field name="brand_id" ref="fleet.fleet_brand_opel"/>
+        <field name="brand_id" ref="fleet_brand_opel"/>
     </record>
 
     <record id="fleet_model_audi_a1" model="fleet.vehicle.model">
         <field name="name">A1</field>
-        <field name="brand_id" ref="fleet.fleet_brand_audi"/>
+        <field name="brand_id" ref="fleet_brand_audi"/>
     </record>
 
     <record id="fleet_model_bmw_serie1" model="fleet.vehicle.model">
         <field name="name">Serie 1</field>
-        <field name="brand_id" ref="fleet.fleet_brand_bmw"/>
+        <field name="brand_id" ref="fleet_brand_bmw"/>
     </record>
 
     <record id="fleet_model_mercedes_a" model="fleet.vehicle.model">
         <field name="name">Class A</field>
-        <field name="brand_id" ref="fleet.fleet_brand_mercedes"/>
+        <field name="brand_id" ref="fleet_brand_mercedes"/>
     </record>
 
     <record id="fleet_model_opel_corsa" model="fleet.vehicle.model">
         <field name="name">Corsa</field>
-        <field name="brand_id" ref="fleet.fleet_brand_opel"/>
+        <field name="brand_id" ref="fleet_brand_opel"/>
     </record>
 
     <!-- =======================
